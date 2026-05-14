@@ -1,0 +1,52 @@
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 40rem;
+  gap: 0.8rem;
+}
+
+.label {
+  color: var(--gray-400);
+  font-size: 1.4rem;
+  text-align: center; /* Centraliza o label com o texto do input */
+}
+
+.input {
+  background-color: transparent;
+  text-align: center;
+  font-size: 1.8rem;
+  padding: 0.8rem;
+  color: var(--text-default);
+  outline: none;
+
+  /* RESERVA DE ESPAÇO: Borda invisível de 2px em volta de tudo */
+  border: 0.2rem solid transparent;
+  /* LINHA VISÍVEL: Apenas embaixo por padrão */
+  border-bottom-color: var(--primary);
+
+  transition: all 0.1s ease-in-out;
+}
+
+/* ESTADO DE FOCO: Quando o usuário clica */
+.input:focus {
+  border-color: var(--primary); /* A borda transparente agora fica verde */
+  border-radius: 0.8rem;
+  background-color: var(--gray-800); /* Dá um leve destaque ao fundo */
+}
+
+/* ESTADO DESATIVADO: Quando o cronômetro está rodando */
+.input:disabled {
+  border-bottom-color: var(--gray-700);
+  color: var(--gray-500);
+  cursor: not-allowed;
+  filter: grayscale(1);
+}
+
+/* ESTILIZANDO O PLACEHOLDER */
+.input::placeholder {
+  color: var(--gray-600);
+  font-size: 1.4rem;
+  font-style: italic;
+  opacity: 0.6;
+}

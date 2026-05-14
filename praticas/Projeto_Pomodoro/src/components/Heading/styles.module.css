@@ -1,0 +1,24 @@
+.headerContent {
+  display: flex;
+  align-items: center; /* Alinha o texto e o ícone no meio (altura) */
+  justify-content: center; /* Centraliza horizontalmente */
+  gap: 1.2rem; /* Espaço de 12px entre o texto e o ícone */
+}
+
+.titulo {
+  font-size: 3.2rem;
+  color: var(--primary);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Estilo básico para o botão que vai envolver o ícone */
+button {
+  background: transparent;
+  border: none;
+  color: var(--primary-light);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}

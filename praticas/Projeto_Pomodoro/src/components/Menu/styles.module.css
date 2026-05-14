@@ -1,0 +1,32 @@
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.6rem;
+  padding: 2.4rem 0; /* Um pequeno respiro vertical */
+}
+
+.menuLink {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  background: var(--primary);
+  
+  /* Usando a variável de contraste que criamos no theme.css */
+  color: var(--text-over-primary);
+  
+  transition: all 0.1s ease-in-out;
+  padding: 1.2rem;
+  border-radius: 0.8rem;
+}
+
+.menuLink:hover {
+  filter: brightness(80%);
+  transform: translateY(-2px); /* Dica extra: um leve pulinho no hover */
+}
+
+.menuLink svg {
+  width: 2.4rem;
+  height: 2.4rem;
+}

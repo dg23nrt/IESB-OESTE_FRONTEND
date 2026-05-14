@@ -1,0 +1,15 @@
+.container {
+  /* clamp(MÍNIMO, IDEAL, MÁXIMO) */
+  font-size: clamp(8rem, 25vw, 16rem);
+  
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.2;
+  
+  /* Cor e espaçamento para dar destaque */
+  color: var(--text-default);
+  padding: 4rem 0;
+  
+  /* Fonte monoespaçada ajuda o relógio a não "pular" quando os números mudam */
+  font-family: 'Roboto Mono', monospace, ui-monospace;
+}
